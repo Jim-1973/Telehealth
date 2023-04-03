@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" type="text/css" href="DoctorsProfile.css">
+    <title>Telehealth | Diabetes Prediction</title>
+</head>
+<style>
+
+    .img_holder img{
+        max-width: 100%; max-height: 100%;
+    }
+
+    .btn-file {
+    position: relative;
+    overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+</style>
+<body>
+<br>
+<br>
+    <section class="book" id="book">
+
+    <h1 class="heading" style="text-align: center;"> <span>PREDICT</span>DIABETES </h1>    
+
+    <div class="row">
+
+        <div class="image">
+            <img src="book-img.svg" alt=" " style="width: 500px; height: 450px;">
+        </div>
+
+             <form action="/book" method='post'>
+            <h3> Please Input The Following:</h3>
+            <label>BMI:</label>
+            <input type="text" placeholder="e.g 23.5" class="box" name="BMI" required>
+            <label>Age:</label>
+            <input type="text" placeholder="e.g 20" class="box" name="Age">
+            <label>Insulin:</label>
+            <input type="text" placeholder="e.g 78" class="box" name="Insulin">
+            <label>Glucose:</label>
+            <input type="text" placeholder="e.g " class="box" name="Glucose">
+            <input type="submit" value="PREDICT" class="btn">
+        </form>
+
+    </div>
+
+</section>
+</body>
+</html>
